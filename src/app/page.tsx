@@ -1,5 +1,6 @@
 import TarjetaGlobal from './components/TarjetaGlobal';
 import TarjetaModulo from './components/TarjetaModulo';
+import TarjetaDinamica from './components/TarjetaDinamica';
 
 export default function Home() {
   return (
@@ -20,6 +21,16 @@ export default function Home() {
             <TarjetaModulo nombre="Modulo Éxito" descripcion="Estilo usando CSS Modules - exito" categoria="exito" variante="tarjetaExito" />
           </div>
         </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-3">Parte 3 — Tarjeta con estilos en línea</h2>
+          <div className="flex gap-4 flex-wrap">
+            <TarjetaDinamica titulo="Dinámica Activa" contenido="Fondo azul y texto blanco, activa" colorFondo="#1e40af" colorTexto="#fff" ancho="300px" activo={true} />
+            <TarjetaDinamica titulo="Dinámica Inactiva" contenido="Fondo gris y texto oscuro, inactiva" colorFondo="#f3f4f6" colorTexto="#111827" ancho="280px" activo={false} />
+          </div>
+        </section>
+
+
       </main>
     </div>
   );
