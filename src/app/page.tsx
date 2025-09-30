@@ -1,5 +1,5 @@
 import TarjetaGlobal from './components/TarjetaGlobal';
-
+import TarjetaModulo from './components/TarjetaModulo';
 
 export default function Home() {
   return (
@@ -10,6 +10,15 @@ export default function Home() {
         <section>
           <h2 className="text-lg font-semibold mb-3">Parte 1 — Tarjeta con estilos globales</h2>
           <TarjetaGlobal titulo="Global Card" contenido="Esta tarjeta usa clases globales desde globals.css" color="#60a5fa" />
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-3">Parte 2 — Tarjeta con CSS Modules</h2>
+          <div className="flex gap-4 flex-wrap">
+            <TarjetaModulo nombre="Modulo Primario" descripcion="Estilo usando CSS Modules - primaria" categoria="primaria" variante="tarjetaPrimaria" />
+            <TarjetaModulo nombre="Modulo Secundario" descripcion="Estilo usando CSS Modules - secundaria" categoria="secundaria" variante="tarjetaSecundaria" />
+            <TarjetaModulo nombre="Modulo Éxito" descripcion="Estilo usando CSS Modules - exito" categoria="exito" variante="tarjetaExito" />
+          </div>
         </section>
       </main>
     </div>

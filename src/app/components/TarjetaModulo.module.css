@@ -1,0 +1,42 @@
+.tarjeta {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 6px 14px rgba(15,23,42,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 34px rgba(15,23,42,0.08);
+}
+.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+.descripcion {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.categoria {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Variantes */
+.tarjetaPrimaria { background: linear-gradient(180deg,hsl(232, 84%, 80%),#fbfbff); border-color: #5371eb; }
+.tarjetaSecundaria { background: linear-gradient(180deg,#e9eb85,#fffaf0); border-color: #ffde5b; }
+.tarjetaExito { background: linear-gradient(180deg,#a8e7d4,#f6fffb); border-color: #86efac; }
+.categoriaPrimaria { background:#eef2ff; color:#3730a3 }
+.categoriaSecundaria { background:#fff7ed; color:#92400e }
+.categoriaExito { background:#ecfdf5; color:#065f46 }
